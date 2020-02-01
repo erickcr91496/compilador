@@ -5,15 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NavigationDrawerPopUpMenu2"
         mc:Ignorable="d"
-        Title="Tabla de Simbolos" Height="450" Width="947.243">
-    <Grid Margin="0,0,123.6,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="23*"/>
-            <ColumnDefinition Width="16*"/>
-            <ColumnDefinition Width="17*"/>
-            <ColumnDefinition Width="760*"/>
-        </Grid.ColumnDefinitions>
-        <DataGrid x:Name="tbl_TDS" Margin="7.328,53,-64.2,51" Grid.Column="2" Grid.ColumnSpan="2"/>
+        Title="Tabla de Simbolos" Height="582" Width="677.643" HorizontalAlignment="Right">
+    <Grid Margin="117,21,126.2,37.8">
+
+        <DataGrid x:Name="tbl_TDS" Margin="10,10,40,76" Background="#FFF34646" FontWeight="Bold"/>
 
     </Grid>
 </Window>

@@ -12,9 +12,9 @@ namespace NavigationDrawerPopUpMenu2.Clases
         public int tipo { get; set; }
         public int size { get; set; }
         public string nombre { get; set; }
-        public string valor { get; set; }
+        public object valor { get; set; }
 
-        public TDS(int nToken, int tipo, int size, string nombre, string valor)
+        public TDS(int nToken, int tipo, int size, string nombre, object valor)
         {
             this.nToken = nToken;
             this.tipo = tipo;

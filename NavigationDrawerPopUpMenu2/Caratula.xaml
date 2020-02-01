@@ -97,7 +97,7 @@
             <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
         </EventTrigger>
     </Window.Triggers>
-    <Grid Cursor="None">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="273*"/>
             <ColumnDefinition Width="521*"/>

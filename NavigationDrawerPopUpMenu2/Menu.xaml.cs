@@ -51,6 +51,7 @@ namespace NavigationDrawerPopUpMenu2
                     
                     usc= new winSintactico();
                     GridMain.Children.Add(usc);
+                   
                     break;
 
                
@@ -106,6 +107,15 @@ namespace NavigationDrawerPopUpMenu2
 
         private void ItemPrograma_Selected(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void BtnNuevoApp(object sender, RoutedEventArgs e)
+        {
+            //Application.Current.Shutdown();
+            //Application.Current.Activated();
+           
+
 
         }
     }

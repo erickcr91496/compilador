@@ -42,6 +42,7 @@
                     <StackPanel Width="150">
 
                         <Button Content="Help"/>
+                        <Button Content="Nuevo" Click="BtnNuevoApp"/>
                         <Separator/>
                         <Button Content="Salir" Click="BtnLogout"/>
                     </StackPanel>

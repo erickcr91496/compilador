@@ -25,7 +25,7 @@ namespace NavigationDrawerPopUpMenu2
     /// </summary>
     public partial class winLexical : UserControl
     {
-        string rutaContador = @"C:\Users\Samantha1\Desktop\PROYECTO COMPILADORES\ProyectoACSv3\archivos\comas.txt";
+        string rutaContador = @"E:\UTN\VII SEMESTRE\COMPILADORES\PJT_ANALIZ_SEMANTICO\v4\ProyectoACSv3\archivos\comas.txt";
 
         TipoDato td = new TipoDato();
         Movimiento afd = new Movimiento();
@@ -65,7 +65,7 @@ namespace NavigationDrawerPopUpMenu2
            
             alfabeto = new loadAlfabeto();
 
-            string rutax = @"C:\Users\Samantha1\Desktop\PROYECTO COMPILADORES\ProyectoACSv3\archivos\Alfabeto2.xml";
+            string rutax = @"E:\UTN\VII SEMESTRE\COMPILADORES\PJT_ANALIZ_SEMANTICO\v4\ProyectoACSv3\archivos\Alfabeto2.xml";
 
 
             gt = new generarTablas();
@@ -96,7 +96,7 @@ namespace NavigationDrawerPopUpMenu2
         private void btnRead_click(object sender, RoutedEventArgs e)
         {
 
-            string ruta2 = @"C:\Users\Samantha1\Desktop\PROYECTO COMPILADORES\ProyectoACSv3\archivos\comas.txt";
+            string ruta2 = @"E:\UTN\VII SEMESTRE\COMPILADORES\PJT_ANALIZ_SEMANTICO\v4\ProyectoACSv3\archivos\comas.txt";
 
             StreamReader sr = new StreamReader(ruta2, System.Text.Encoding.ASCII);
             ReadAFD(sr);
@@ -181,7 +181,7 @@ namespace NavigationDrawerPopUpMenu2
             reconocidos.Clear();
             txtb_palabraactual.Clear();
             Listafin = new ArrayList();
-            String buscar =  @"C: \Users\Samantha1\Desktop\PROYECTO COMPILADORES\ProyectoACSv3\archivos\prueba4.txt";
+            String buscar = @"E:\UTN\VII SEMESTRE\COMPILADORES\PJT_ANALIZ_SEMANTICO\v4\ProyectoACSv3\archivos\prueba4.txt";
            
         
                 StreamReader sr = new StreamReader(buscar);
@@ -243,11 +243,6 @@ namespace NavigationDrawerPopUpMenu2
                         x = 1;
                     }
                    
-
-
-
-
-
 
                 
                     else
@@ -694,7 +689,6 @@ int n = 0;
                    String a = reconocidos[i].ToString();
 
 
-
                     if (t.Lexema.Equals(reconocidos[i]))
                     {
                         Listorec.Add(t);
@@ -717,12 +711,6 @@ int n = 0;
                         Listorec.Add(t2);
                         break;
                     }
-
-
-
-
-
-
 
                 }
             }
@@ -748,7 +736,6 @@ int n = 0;
                 }
 
 
-
                 int mainindice = 0;
                 for (int x = 0; x < reconocidos.Count; x++)
                 {
@@ -756,11 +743,6 @@ int n = 0;
                         mainindice = x;
                     }
                 }
-
-
-              
-
-
 
                     if (!reconocidos.Contains("main"))
                 {
@@ -771,7 +753,6 @@ int n = 0;
                 }
 
             
-
                 if (td.RecoTipo(reconocidos[i].ToString()).Equals("tipo"))
                 {
                   String cost=  reconocidos[i + 1].ToString().Substring(0, 1);
@@ -787,9 +768,6 @@ int n = 0;
 
                     }
                    
-
-                  
-
 
 
                 }

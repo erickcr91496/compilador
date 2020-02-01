@@ -107,5 +107,36 @@ namespace NavigationDrawerPopUpMenu2
             ws.tbl_TDS.ItemsSource = Funciones.ListaTDS;
             ws.Show();
         }
+
+        private void btn_CargarSemantico(object sender, RoutedEventArgs e)
+        {
+            //codigointermedio c = new codigointermedio();
+
+            //List<Cuadruplos> CodigoIntermedio = Funciones.CodigoIntermedio1;
+
+            //c.tbl_codigointermedio.ItemsSource = null;
+
+            //c.tbl_codigointermedio.Columns.Clear();
+            //c.tbl_codigointermedio.ItemsSource = CodigoIntermedio;
+
+            //// CARGAR TDS
+            //TDSSemantico ws = new TDSSemantico();
+            ////   ws.tbl_TDS.ItemsSource=
+            //ws.tbl_TDS.ItemsSource = Funciones.ListaTDS;
+
+            // 
+            TablaSemantica ts = new TablaSemantica();
+            ts.Show();
+        }
+
+        private void btn_nuevoArchivo(object sender, RoutedEventArgs e)
+        {
+            Menu m = new Menu();
+            winLexical le = new winLexical();
+            
+           
+            
+            
+        }
     }
 }

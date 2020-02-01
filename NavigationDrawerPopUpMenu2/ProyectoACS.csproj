@@ -110,6 +110,9 @@
     <Compile Include="Clases\Sintactico\movimientos.xaml.cs">
       <DependentUpon>movimientos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TablaSemantica.xaml.cs">
+      <DependentUpon>TablaSemantica.xaml</DependentUpon>
+    </Compile>
     <Compile Include="winSemantico.xaml.cs">
       <DependentUpon>winSemantico.xaml</DependentUpon>
     </Compile>
@@ -162,6 +165,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Clases\Sintactico\movimientos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TablaSemantica.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

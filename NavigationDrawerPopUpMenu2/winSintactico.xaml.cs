@@ -29,8 +29,8 @@ namespace NavigationDrawerPopUpMenu2
         
         //Gramatica g= new Gramatica(@"C:\Users\Samantha1\Desktop\Gramatica_SLR.xml");
         //Transicion tr = new Transicion(@"C:\Users\Samantha1\Desktop\Gramatica_SLR.xml");
-         Gramatica g= new Gramatica(@"C:\Users\Samantha1\Desktop\PROYECTO COMPILADORES\ProyectoACSv3\archivos\Gramatica_SLR.xml");
-        Transicion tr = new Transicion(@"C:\Users\Samantha1\Desktop\PROYECTO COMPILADORES\ProyectoACSv3\archivos\Gramatica_SLR.xml");
+         Gramatica g= new Gramatica(@"E:\UTN\VII SEMESTRE\COMPILADORES\PJT_ANALIZ_SEMANTICO\v4\ProyectoACSv3\archivos\Gramatica_SLR.xml");
+        Transicion tr = new Transicion(@"E:\UTN\VII SEMESTRE\COMPILADORES\PJT_ANALIZ_SEMANTICO\v4\ProyectoACSv3\archivos\Gramatica_SLR.xml");
 
         public winSintactico()
         {
@@ -185,23 +185,11 @@ namespace NavigationDrawerPopUpMenu2
 
             String cadenapila="";
             String entrada="";
-            do
-
-            {
-               
-
-
+            do {
                
                 estado = Convert.ToInt16(pila.First());
-         
                 char sinonimo = tkr[idtk].Sinonimo;
-
                 newEstado = buscarColumna(estado, sinonimo);
-
-
-
-
-
 
                 if (newEstado != 0)
                 {
@@ -316,13 +304,7 @@ namespace NavigationDrawerPopUpMenu2
                     {
                         ReglaReco.Add(new Produccion(regla, parteizq, parteder, tkr[idtk - 1].Lexema));
 
-                        /*imprimir("aaaaaaaaa -> regla: " + regla + " r_partDer: " + reglas_parteDerechar(regla) + " n_term: " + no_terminal +
-                            " numElem: " + numElementosParteDerecha + " lexema: " + this.listaTokens[idtk].lexema);*/
                     }
-
-
-
-
 
                 }
                 else if (newEstado == 999)
@@ -334,7 +316,6 @@ namespace NavigationDrawerPopUpMenu2
                 else if(newEstado == 0)
                 {
                     char s = tkr[idtk].Sinonimo;
-                    
                     int estadoactual = estado;
                     buscarColumna(estado, sinonimo);
                     nerror++;
@@ -348,17 +329,9 @@ namespace NavigationDrawerPopUpMenu2
             {
                 
                print[print.Count - 1].a = "error";
-                
-                tb_error.AppendText("programa fuente con errores sintácticos");
+               tb_error.AppendText("programa fuente con errores sintácticos");
             }
-
-
-
-
-
-
         }
-
 
         int buscarColumna(int estado, char c)
         {

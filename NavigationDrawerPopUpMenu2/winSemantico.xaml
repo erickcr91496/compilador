@@ -33,9 +33,10 @@
 
             </TabControl>
         </TabPanel>
-        <Button x:Name="btn_aceptar" Content="Analizar&#xD;&#xA;" Height="Auto" Margin="44,72,252.2,616.8" Click="Btn_aceptar_Click"/>
-        <Button x:Name="btn_mostrarCodigo" Content="mostrar codigo&#xD;&#xA;" Height="Auto" Margin="400.8,126,191.6,566.8" Grid.Column="1" Click="Btn_mostrarCodigo_Click"/>
-        <Button Content="TDS" Height="Auto" Margin="400.8,198,191.6,494.8" Grid.Column="1" Click="Button_Click_1"/>
+        <Button x:Name="btn_aceptar" Content="Analizar&#xD;&#xA;" Height="Auto" Margin="44,72,194.2,616.8" Click="Btn_aceptar_Click"/>
+        <Button x:Name="btn_mostrarCodigo" Content="mostrar codigo&#xD;&#xA;" Height="Auto" Margin="507.8,373,84.6,319.8" Grid.Column="1" Click="Btn_mostrarCodigo_Click"/>
+        <Button Content="TDS" Height="Auto" Margin="507.8,474,84.6,218.8" Grid.Column="1" Click="Button_Click_1"/>
+        <Button Content="VER TABLA" Height="Auto" Margin="371,64,592.6,628.8" Click="btn_CargarSemantico" Grid.ColumnSpan="2"/>
         <!--<DataGrid Name="tblAlfabeto" HorizontalAlignment="Left" Height="412" Margin="10,107.8,0,0" VerticalAlignment="Top" Width="862.3"/>-->
 
 
